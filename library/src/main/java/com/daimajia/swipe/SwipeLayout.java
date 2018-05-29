@@ -125,7 +125,9 @@ public class SwipeLayout extends FrameLayout {
 
         void onHandRelease(SwipeLayout layout, float xvel, float yvel);
     }
-
+  public void removeAllSwipeListener() {
+       mSwipeListeners.clear();
+    }
     public void addSwipeListener(SwipeListener l) {
         mSwipeListeners.add(l);
     }
